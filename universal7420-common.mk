@@ -358,16 +358,9 @@ PRODUCT_PACKAGES += \
 #
 PRODUCT_PACKAGES += \
 	fstab.samsungexynos7420 \
-	init.baseband.rc \
-	init.battery.rc \
 	init.power.rc \
-	init.rilchip.prop \
-	init.rilchip.rc \
-	init.rilchip.sh \
 	init.samsungexynos7420.rc \
 	init.samsungexynos7420.usb.rc \
-        init.sensors.rc \
-	init.recovery.samsungexynos7420.rc \
 	ueventd.samsungexynos7420.rc
 
 #
