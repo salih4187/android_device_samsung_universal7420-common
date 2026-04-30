@@ -607,3 +607,6 @@ service sensorhubservice /system/bin/sensorhubservice
     class main
     user system
     group input
+
+on property:apexd.status=ready
+    mount none /system/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
