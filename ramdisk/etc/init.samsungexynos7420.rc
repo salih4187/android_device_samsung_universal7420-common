@@ -1,9 +1,9 @@
-import init.samsung.rc
-import init.samsungexynos7420.usb.rc
-import init.wifi.rc
-import init.baseband.rc
-import init.carrier.rc
-import init.power.rc
+import /vendor/etc/init/hw/init.samsung.rc
+import /vendor/etc/init/hw/init.samsungexynos7420.usb.rc
+import /vendor/etc/init/hw/init.wifi.rc
+import /vendor/etc/init/hw/init.baseband.rc
+import /vendor/etc/init/hw/init.carrier.rc
+import /vendor/etc/init/hw/init.power.rc
 
 on early-init
     mount debugfs /sys/kernel/debug /sys/kernel/debug mode=755

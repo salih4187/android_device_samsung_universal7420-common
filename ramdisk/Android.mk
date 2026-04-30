@@ -13,7 +13,7 @@ LOCAL_MODULE            := init.power.rc
 LOCAL_MODULE_TAGS       := optional
 LOCAL_MODULE_CLASS      := ETC
 LOCAL_SRC_FILES         := etc/init.power.rc
-LOCAL_MODULE_PATH       := $(TARGET_ROOT_OUT)
+LOCAL_MODULE_PATH       := $(TARGET_OUT_VENDOR_ETC)/init/hw
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -21,7 +21,7 @@ LOCAL_MODULE		:= init.samsungexynos7420.rc
 LOCAL_MODULE_TAGS	:= optional
 LOCAL_MODULE_CLASS	:= ETC
 LOCAL_SRC_FILES		:= etc/init.samsungexynos7420.rc
-LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
+LOCAL_MODULE_PATH	:= $(TARGET_OUT_VENDOR_ETC)/init/hw
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -29,7 +29,7 @@ LOCAL_MODULE		:= init.samsungexynos7420.usb.rc
 LOCAL_MODULE_TAGS	:= optional
 LOCAL_MODULE_CLASS	:= ETC
 LOCAL_SRC_FILES		:= etc/init.samsungexynos7420.usb.rc
-LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
+LOCAL_MODULE_PATH	:= $(TARGET_OUT_VENDOR_ETC)/init/hw
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
