@@ -247,6 +247,8 @@ PRODUCT_PACKAGES += \
     init.power.rc \
     init.samsungexynos7420.rc \
     init.samsungexynos7420.usb.rc \
+    init.samsung.rc \
+    init.wifi.rc \
     ueventd.samsungexynos7420.rc
 
 # RenderScript HAL
