@@ -1,29 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Comments, Legal notices, etc. here -->
 <manifest version="1.0" type="device">
-
-    <!--
-        Audio
-      -->
-
-    <hal format="hidl">
-        <name>android.hardware.audio</name>
-        <transport arch="32+64">passthrough</transport>
-        <version>5.0</version>
-        <interface>
-            <name>IDevicesFactory</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.audio</name>
-        <transport arch="32+64">passthrough</transport>
-        <version>4.0</version>
-        <interface>
-            <name>IDevicesFactory</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport arch="32+64">passthrough</transport>
@@ -36,36 +11,21 @@
     <hal format="hidl">
         <name>android.hardware.audio.effect</name>
         <transport arch="32+64">passthrough</transport>
-        <version>5.0</version>
+        <version>2.0</version>
         <interface>
             <name>IEffectsFactory</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
-        <name>android.hardware.audio.effect</name>
-        <transport arch="32+64">passthrough</transport>
-        <version>4.0</version>
-        <interface>
-            <name>IEffectsFactory</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-
-    <!--
-        Bluetooth
-      -->
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>
-        <impl level="generic"></impl>
         <version>1.0</version>
         <interface>
             <name>IBluetoothHci</name>
             <instance>default</instance>
         </interface>
     </hal>
-
     <hal format="hidl">
         <name>android.hardware.camera.provider</name>
         <transport arch="32+64">passthrough</transport>
@@ -75,24 +35,15 @@
             <instance>legacy/0</instance>
         </interface>
     </hal>
-
-    <!--
-        Configstore
-      -->
     <hal format="hidl">
         <name>android.hardware.configstore</name>
         <transport>hwbinder</transport>
-        <impl level="generic"></impl>
         <version>1.0</version>
         <interface>
             <name>ISurfaceFlingerConfigs</name>
             <instance>default</instance>
         </interface>
     </hal>
-
-    <!--
-        DRM
-      -->
      <hal format="hidl">
          <name>android.hardware.drm</name>
          <transport>hwbinder</transport>
@@ -105,17 +56,7 @@
              <name>IDrmFactory</name>
              <instance>default</instance>
          </interface>
-         <fqname>@1.0::ICryptoFactory/default</fqname>
-         <fqname>@1.0::IDrmFactory/default</fqname>
-         <fqname>@1.2::ICryptoFactory/clearkey</fqname>
-         <fqname>@1.1::ICryptoFactory/widevine</fqname>
-         <fqname>@1.2::IDrmFactory/clearkey</fqname>
-         <fqname>@1.1::IDrmFactory/widevine</fqname>
     </hal>
-
-    <!--
-        Fingerprint
-      -->
     <hal format="hidl">
         <name>android.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
@@ -125,10 +66,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-
-    <!--
-        Graphics
-      -->
     <hal format="hidl">
         <name>android.hardware.graphics.allocator</name>
         <transport>hwbinder</transport>
@@ -152,78 +89,42 @@
             <instance>default</instance>
         </interface>
     </hal>
-
-    <!--
-        IR
-      -->
     <hal format="hidl">
         <name>android.hardware.ir</name>
         <transport>hwbinder</transport>
-        <impl level="generic"></impl>
         <version>1.0</version>
         <interface>
             <name>IConsumerIr</name>
             <instance>default</instance>
         </interface>
     </hal>
-
-    <!--
-        Keymaster
-      -->
     <hal format="hidl">
         <name>android.hardware.keymaster</name>
         <transport>hwbinder</transport>
-        <impl level="generic"></impl>
-        <version>4.0</version>
+        <version>3.0</version>
         <interface>
             <name>IKeystoreService</name>
             <instance>default</instance>
         </interface>
     </hal>
-
-    <!--
-        Light
-      -->
     <hal format="hidl">
         <name>android.hardware.light</name>
         <transport>hwbinder</transport>
-        <impl level="generic"></impl>
         <version>2.0</version>
         <interface>
             <name>ILight</name>
             <instance>default</instance>
         </interface>
     </hal>
-
-    <!--
-        LiveDisplay
-      -->
-    <hal format="hidl">
-        <name>vendor.lineage.livedisplay</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IColor</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-
-    <!--
-        Location
-      -->
     <hal format="hidl">
         <name>android.hardware.gnss</name>
-        <transport arch="32+64">passthrough</transport>
-        <version>1.1</version>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
         <interface>
             <name>IGnss</name>
             <instance>default</instance>
         </interface>
     </hal>
-
-    <!--
-        OMX
-      -->
     <hal format="hidl">
         <name>android.hardware.media.omx</name>
         <transport>hwbinder</transport>
@@ -237,10 +138,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-
-    <!--
-        Power
-      -->
     <hal format="hidl">
         <name>android.hardware.power</name>
         <transport>hwbinder</transport>
@@ -251,72 +148,32 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.lineage.power</name>
+        <name>android.hardware.memtrack</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>ILineagePower</name>
+            <name>IMemtrack</name>
             <instance>default</instance>
         </interface>
     </hal>
-
-    <!--
-        Touch
-      -->
-    <hal format="hidl">
-        <name>vendor.lineage.touch</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IKeyDisabler</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-
-    <!--
-        Trust
-      -->
-    <hal format="hidl">
-        <name>vendor.lineage.trust</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IUsbRestrict</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-
-    <!--
-        USB
-      -->
     <hal format="hidl">
         <name>android.hardware.usb</name>
         <transport>hwbinder</transport>
-        <impl level="generic"></impl>
         <version>1.0</version>
         <interface>
             <name>IUsb</name>
             <instance>default</instance>
         </interface>
     </hal>
-
-    <!--
-        Vibrator
-      -->
     <hal format="hidl">
         <name>android.hardware.vibrator</name>
         <transport>hwbinder</transport>
-        <impl level="generic"></impl>
         <version>1.0</version>
         <interface>
             <name>IVibrator</name>
             <instance>default</instance>
         </interface>
     </hal>
-
-    <!--
-        WiFi
-      -->
     <hal format="hidl">
         <name>android.hardware.wifi</name>
         <transport>hwbinder</transport>
@@ -341,6 +198,24 @@
         <version>1.2</version>
         <interface>
             <name>ISupplicant</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lineage.touch</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IKeyDisabler</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lineage.trust</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IUsbRestrict</name>
             <instance>default</instance>
         </interface>
     </hal>

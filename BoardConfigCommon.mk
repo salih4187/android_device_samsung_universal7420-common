@@ -16,8 +16,6 @@
 
 LOCAL_PATH := device/samsung/universal7420-common
 
-TARGET_SLSI_VARIANT := bsp
-
 #
 # Architecture
 #
@@ -116,18 +114,15 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x10008000 --ramdisk_offset 0x11000000 --tags_offset 0x10000100
 TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
+TARGET_BOARD_KERNEL_HEADERS := hardware/samsung_slsi/exynos/kernel-3.10-headers/kernel-headers
 TARGET_KERNEL_SOURCE := kernel/samsung/universal7420
 TARGET_LINUX_KERNEL_VERSION := 3.10
-
-# Keymaster
-BOARD_USES_TRUST_KEYMASTER := true
 
 # HIDL
 DEVICE_MANIFEST_FILE += device/samsung/universal7420-common/manifest.xml
 
 # HWComposer
 BOARD_USES_VPP := true
-BOARD_HDMI_INCAPABLE := true
 
 # Graphics
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
@@ -165,7 +160,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/fstab.samsungexynos7420.recovery
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/etc/fstab.samsungexynos7420
 BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_HAS_DOWNLOAD_MODE := true
 
