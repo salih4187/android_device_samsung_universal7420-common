@@ -303,8 +303,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf
 
-# call Samsung LSI board support package
-$(call inherit-product, hardware/samsung_slsi/exynos7420/exynos7420.mk)
-
 # Also get non-open-source specific aspects if available
 $(call inherit-product, vendor/samsung/universal7420-common/universal7420-common-vendor.mk)
