@@ -26,6 +26,7 @@ cc_library_static {
 
 cc_library_shared {
     name: "camera.exynos5",
+    proprietary: true,
     relative_install_path: "hw",
 
     srcs: [
