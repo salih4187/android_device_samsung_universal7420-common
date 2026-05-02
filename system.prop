@@ -26,6 +26,8 @@ dalvik.vm.heapmaxfree=8m
 #
 ro.opengles.version=196610
 ro.zygote.disable_gl_preload=1
+debug.hwc.force_gpu=0
+debug.hwc.winupdate=1
 
 #
 # HWC
