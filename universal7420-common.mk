@@ -57,7 +57,8 @@ TARGET_SCREEN_WIDTH := 1440
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     camera.device@1.0-impl \
-    camera.exynos5
+    camera.exynos5 \
+    libcsc
 
 # Configstore
 PRODUCT_PACKAGES += \
