@@ -119,6 +119,7 @@ DEVICE_MANIFEST_FILE += device/samsung/universal7420-common/manifest.xml
 
 # HWComposer
 BOARD_USES_VPP := true
+BOARD_HDMI_INCAPABLE := true
 
 # Graphics
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
