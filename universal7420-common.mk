@@ -96,6 +96,11 @@ PRODUCT_PACKAGES += \
     hwcomposer.universal7420 \
     memtrack.universal7420
 
+# Healthd
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.0-impl \
+    android.hardware.health@2.0-service
+
 # IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl
