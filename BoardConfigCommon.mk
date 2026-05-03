@@ -93,6 +93,16 @@ TARGET_BOOTLOADER_BOARD_NAME := universal7420
 TARGET_BOARD_PLATFORM := exynos5
 TARGET_SOC := exynos7420
 
+# Dexpreopt
+ifeq ($(HOST_OS),linux)
+  ifneq ($(TARGET_BUILD_VARIANT),eng)
+    ifeq ($(WITH_DEXPREOPT),)
+      WITH_DEXPREOPT := true
+      WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
+    endif
+  endif
+endif
+
 # Fingerprint
 TARGET_SEC_FP_CALL_NOTIFY_ON_CANCEL := true
 TARGET_SEC_FP_CALL_CANCEL_ON_ENROLL_COMPLETION := true
