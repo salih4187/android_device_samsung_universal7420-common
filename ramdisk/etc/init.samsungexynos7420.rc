@@ -685,6 +685,12 @@ on fs
     chown system system /dev/i2c-7
     chmod 0660 /dev/i2c-7
 
+on late-fs
+    # Start services for bootanim
+    start servicemanager
+    start surfaceflinger
+    start bootanim
+
 # ARGOSD
 service argos-daemon /vendor/bin/argosd
     class main
