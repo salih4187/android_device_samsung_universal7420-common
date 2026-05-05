@@ -685,12 +685,19 @@ on fs
     chown system system /dev/i2c-7
     chmod 0660 /dev/i2c-7
 
+    # Start HW service manager early
+    start hwservicemanager
+
 on late-fs
     # Start services for bootanim
-    start hwservicemanager
     start servicemanager
     start surfaceflinger
     start bootanim
+
+    # Make sure HW service manager started and start required HAL services
+    wait_for_prop hwservicemanager.ready true
+    start vendor.configstore-hal
+    start vendor.gralloc-2-0
 
 # ARGOSD
 service argos-daemon /vendor/bin/argosd
