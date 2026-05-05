@@ -92,7 +92,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.mapper@2.0-impl \
     libhwc2on1adapter \
-    gralloc.exynos7420 \
+    gralloc.exynos5 \
     hwcomposer.universal7420 \
     memtrack.universal7420
 
