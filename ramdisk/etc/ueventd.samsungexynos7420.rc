@@ -138,7 +138,7 @@
 /dev/iio:device*          0660   system		system
 /sys/devices/14d30000.spi/spi_master/spi1/spi1.0/iio:device*    buffer/enable       0660    system    system
 /sys/devices/14d30000.spi/spi_master/spi1/spi1.0/iio:device*    buffer/length       0660    system    system
-/sys/bus/iio/devices/iio:device*    0664   system     radio
+/sys/bus/iio/devices/iio device*    0664   system     radio
 
 # Broadcom Sensorhub Bridge Driver
 /dev/bbd_sensor           0660   system     system
