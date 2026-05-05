@@ -409,7 +409,7 @@ on boot
     setprop ro.mst.support 1
 
 on fs
-    mount_all /vendor/etc/fstab.samsungexynos7420
+    mount_all /vendor/etc/fstab.samsungexynos7420 --early
     setprop ro.crypto.fuse_sdcard true
 
     # Permissions for TouchScreen
@@ -696,6 +696,9 @@ on late-fs
 
     start vendor.configstore-hal
     start vendor.gralloc-2-0
+
+    # Mount RW partitions which need run fsck
+    mount_all /vendor/etc/fstab.samsungexynos7420 --late
 
 # ARGOSD
 service argos-daemon /vendor/bin/argosd
