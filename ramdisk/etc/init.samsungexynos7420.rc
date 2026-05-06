@@ -734,7 +734,6 @@ service sswap /vendor/bin/sswap -s -f 2048
     class core
     user root
     group root
-    seclabel u:r:sswap:s0
     oneshot
 
 on shutdown
