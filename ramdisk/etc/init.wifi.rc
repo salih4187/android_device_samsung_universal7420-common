@@ -66,20 +66,6 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant -O/data/vendor/wifi/wpa/soc
     disabled
     oneshot
 
-# tiburona
-# start for WiFi MFG (TestMode)
-service mfgloader /system/bin/mfgloader
-    class main
-    disabled
-    oneshot
-
-service wlandutservice /system/bin/wlandutservice
-    class main
-    user system
-    group wifi net_raw net_admin system inet
-    disabled
-    oneshot
-
 service macloader /vendor/bin/macloader
     class main
     disabled
