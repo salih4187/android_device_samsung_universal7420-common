@@ -143,9 +143,9 @@ TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
 # Shims
 TARGET_LD_SHIM_LIBS += \
     /system/bin/mediaserver|/vendor/lib/libstagefright_shim.so \
-    /system/lib64/libbauthserver.so|/vendor/lib64/libbauthtzcommon_shim.so \
-    /system/lib/libexynoscamera.so|/vendor/lib/libexynoscamera_shim.so \
-    /system/lib64/libexynoscamera.so|/vendor/lib64/libexynoscamera_shim.so
+    /system/vendor/lib64/libbauthserver.so|/vendor/lib64/libbauthtzcommon_shim.so \
+    /system/vendor/lib/libexynoscamera.so|/vendor/lib/libexynoscamera_shim.so \
+    /system/vendorlib64/libexynoscamera.so|/vendor/lib64/libexynoscamera_shim.so
 
 # Partitions
 TARGET_USERIMAGES_USE_EXT4 := true
